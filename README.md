@@ -1,2 +1,2 @@
 # GeoViz-Final-Project
-Abandoned Mines/Demography 
+This is our repository/workspace for our data and code for our abandoned mines/demography project
