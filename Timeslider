@@ -24,7 +24,10 @@
 </style>
 </head>
 <body>
-
+<div id="description">
+	<b> How to use this app:</b>
+	<br>
+	This app utilizes multiple visualizations to help you explore the relationship between industrial change (in this case, the steady closing of mines) and widespread economic shifts within local communities. Hover your mouse above a county to read its info. Move the time slider at the bottom to view the number of active mines in counties as well as the county's median household income. You can use the parallel coordinate plot to observe a particular county's general information like name and population, as well as median household income and number of active mines. Clicking and dragging along a vertical axis will filter particular counties to help you further explore the data. 
 <div id='map'></div>
 
 <div class="noUi-base" id="slider"></div>
