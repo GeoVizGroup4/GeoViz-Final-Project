@@ -1,19 +1,19 @@
       // linear color scale
-var blue_to_brown = d3.scale.linear()
+// var blue_to_red = d3.scale.linear()
   .domain([9, 50])
-  .range(["steelblue", "brown"])
+  .range(["steelblue", "red"])
   .interpolate(d3.interpolateLab);
 
 // interact with this variable from a javascript console
 var pc1;
 
 // load csv file and create the chart
-d3.csv('examples/data/cars.csv', function(data) {
+d3.csv('MINE & INCOME CSV FILE', function(data) {
   pc1 = d3.parcoords()("#example1")
     .data(data)
     .hideAxis(["name"])
     .composite("darken")
-    .color(function(d) { return blue_to_brown(d['economy (mpg)']); })  // quantitative color scale
+    .color(function(d) { return blue_to_red(d['median income']); })  // quantitative color scale
     .alpha(0.35)
     .render()
     .brushMode("1D-axes")  // enable brushing
@@ -57,15 +57,3 @@ d3.csv('examples/data/cars.csv', function(data) {
 
 });
 
-
-
-<svg width="1000" height="600">
-  <g transform="translate(30,30)">
-    <g class="background">...</g>
-    <g class="foreground">...</g>
-    <g class="dimension" transform="translate(100)">
-      <g class="axis">...</g>
-      <g class="brush" style"pointer-events: all; color: rgba(0, 0, 0, 0);">...</g>
-      </g>
-      
-      
